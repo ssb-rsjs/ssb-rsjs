@@ -16,7 +16,7 @@ The plan for gradual migration is outlined below as multiple "horizons" (can be 
 
 > All modules are implemented in Node.js
 
-<img src="images/horizon0.svg" width="400">
+<img src="images/horizon0.svg" width="500">
 
 This is the current state of the canonical SSB stack currently used in production in Patchwork, Patchbay, Manyverse, and Oasis. Some modules have native bindings to C, such as `ssb-keys` which depends on libsodium (implemented either in C, WASM, or JS).
 
@@ -24,7 +24,7 @@ This is the current state of the canonical SSB stack currently used in productio
 
 > Most modules are implemented in Node.js, some are ssb-neon to bridge with pure Rust
 
-<img src="images/horizon1.svg" width="400">
+<img src="images/horizon1.svg" width="500">
 
 (`c`, `k`, `m` under `ssb-neon-keys` stand for [`ssb-crypto`](https://github.com/sunrise-choir/ssb-crypto/), [`ssb-keyfile`](https://github.com/sunrise-choir/ssb-keyfile), and [`ssb-multiformats`](https://github.com/sunrise-choir/ssb-multiformats/tree/master/src), respectively)
 
@@ -44,7 +44,7 @@ A new stack can be as good as it gets, if it's not used in production, it become
 
 > Most modules are ssb-neon bridging with pure Rust, some modules are still implemented in Node.js
 
-<img src="images/horizon2.svg" width="400">
+<img src="images/horizon2.svg" width="500">
 
 As we get used to writing ssb-neon modules, gathering feedback and crash reports and platform support reports, we develop the habit of converting old stack modules to new stack modules.
 
@@ -56,7 +56,7 @@ All low-level modules in Horizon 2 are implemented in Rust, and mid-level Node.j
 
 > All modules are Rust equivalents to Node.js modules, only one thin layer is ssb-neon to bridge with Node.js
 
-<img src="images/horizon3.svg" width="400">
+<img src="images/horizon3.svg" width="500">
 
 The goal in Horizon 3 is to **convert mid-level modules from Node.js to Rust**. The only Neon module in this horizon would be one thin layer that simply bridges between JavaScript and Rust. This is primarily useful for apps implemented in Electron or other JavaScript runtimes.
 
@@ -70,7 +70,7 @@ For backwards compatibility and maintenance, the internal structure of Rust crat
 
 > Freedom to reorganize Rust modules independently of how it looked like before with Node.js
 
-<img src="images/horizon4.svg" width="400">
+<img src="images/horizon4.svg" width="500">
 
 When the stack has matured and is used by several apps in several runtimes (not just JS), we should have the freedom to reorganize Rust crates independently of the structure existing in Horizon 0.
 

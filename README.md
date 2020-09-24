@@ -26,7 +26,7 @@ Currently, these are:
 - [ ] `ssb-neon-backlinks`
 - [ ] `ssb-neon-private`
 - [ ] `ssb-neon-search`
-- etc
+- [ ] ([Help us tick these boxes!](./CONTRIBUTING.md))
 
 ## Contributing
 
@@ -34,4 +34,4 @@ If you want to create one of these modules, check the [Contributor guide](./CONT
 
 ## Big picture plan
 
-To read more on why and how we're building SSB Neon, check [PLAN.md](./PLAN.md)
+To read more on why and how we're building SSB Neon, check [The Plan](./PLAN.md)
