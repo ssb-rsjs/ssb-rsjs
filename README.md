@@ -34,4 +34,4 @@ If you want to create one of these modules, check the [Contributor guide](./CONT
 
 ## Big picture plan
 
-To read more on why and how we're building SSB Neon, check [The Plan](./PLAN.md)
+To read more on why and how we're building SSB Neon, check [The Plan](./PLAN.md).
