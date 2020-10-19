@@ -6,7 +6,7 @@ SSB Neon modules are **npm packages** written in Rust instead of JavaScript. You
 
 Currently, these are:
 
-- [x] [`ssb-neon-keys`](https://github.com/staltz/ssb-neon-keys)
+- [x] [`ssb-keys-neon`](https://github.com/staltz/ssb-keys-neon)
 - [ ] `neon-muxrpc`
 - [ ] `neon-multiserver`
 - [ ] `ssb-neon-conn`
