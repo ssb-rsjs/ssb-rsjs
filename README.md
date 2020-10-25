@@ -2,7 +2,7 @@
 
 > Migrating the SSB Node.js stack to Rust, gradually
 
-SSB Neon modules are **npm packages** written in Rust instead of JavaScript. You can use the npm package `ssb-neon-something` as a direct replacement of `ssb-something`.
+SSB Neon modules are **npm packages** written in Rust instead of JavaScript. You can use the npm package `ssb-something-neon` as a direct replacement of `ssb-something`.
 
 Currently, these are:
 
