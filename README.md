@@ -1,4 +1,4 @@
-# SSB Neon
+# SSB RSJS
 
 > Migrating the SSB Node.js stack to Rust, gradually
 
